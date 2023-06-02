@@ -1,0 +1,9 @@
+mixin title (type, title, title_alt)
+    if !title_alt
+        - title_alt = title
+    #{type}(
+        class!=attributes.class
+        title=title_alt
+        )&attributes(attributes) !{title}
+        if block
+            block

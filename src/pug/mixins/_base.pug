@@ -1,0 +1,31 @@
+mixin html_template
+    if(process.env.NODE_ENV !== 'production')
+        doctype html
+        html(lang="es-PE")(class!=attributes.class)
+            head
+                include ../base/head
+            body.entel-body
+                if block
+                    block
+                include ../base/foot
+    else
+        head
+            include ../base/head_prod
+        if block
+            block
+
+mixin html_template_clear
+    if(process.env.NODE_ENV !== 'production')
+        doctype html
+        html(lang="es-PE")(class!=attributes.class)
+            head
+                include ../base/head_clear
+            body.entel-body
+                if block
+                    block
+                include ../base/foot
+    else
+        head
+            include ../base/head_prod
+        if block
+            block

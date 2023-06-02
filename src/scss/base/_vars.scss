@@ -1,0 +1,150 @@
+// Layout
+$container_desktop: 1660px;
+//$container: 1170px;
+$container: 1110px;
+$container_laptop_s: 970px;
+$container_tablet_m: 730px;
+
+// Breakpoints
+$mobile_s: 320px;
+$mobile_m: 360px;
+$mobile_l: 425px;
+$tablet_s: 640px;
+$tablet_m: 768px;
+$tablet_l: 850px;
+$tablet_ll: 992px;
+
+$laptop_s: 1024px;
+$laptop_m: 1280px;
+$desktop_s: 1440px;
+$desktop_m: 1750px;
+
+$breakpoint_list: ('ms', $mobile_s),
+('mm', $mobile_m),
+('ml', $mobile_l),
+('ts', $tablet_s),
+('tm', $tablet_m),
+('tl', $tablet_l),
+('ls', $laptop_s),
+('lm', $laptop_m),
+('ds', $desktop_s),
+('dm', $desktop_m);
+
+// Colors
+$gray-light: #F5F5F5;
+
+$white: #fff;
+$black: #000;
+$light_black: #2A2A2A;
+$extra_light_black: #4E5057;
+$light_gray: #F3F7F9;
+$dark_light_gray: #c4c4c4;
+$gray: #8f8f8f;
+$dark_gray: #4e4e4e;
+$gray_border: #DDDDDD;
+$light_beige :#F8F8F8 ;
+$hiper_gray: #FFFFFF;
+$border_gray: #EBEBEB;
+$extra_light_gray: #F4F4F4;
+$super_light_gray: #F9F9F9;
+$input_height: 44px !default;
+$extra_dark_gray: #9E9FA1;
+//$pink: #F46C8F;
+$pink: #FD6C98;
+$blue: #004FB9;
+$dark_blue: #221E78;
+$extra_dark_blue: #00004B;
+$extra_extra_dark_blue: #1e187b;
+$extra_blue: #00B9EB;
+$live_blue: #2FCBF1;
+$sky_blue: #7EB1F6;
+$purple_light: #5746A8;
+$live_blue_lighter:#d9f5fc;
+$live_blue_lighter2:#d9e6f1;
+$sky_light_blue: #C9DEF8;
+$mustard: #ffb820;
+$orange: #FF560A;
+$dark_orange: #EE440E;
+$lght_orange: #ff7b00;
+$green_dark: #00AD8A;
+$teal: #5CDEB1;
+$wsp_green: #43D854;
+$primary: $blue;
+$secondary: $orange;
+$color-light-blue: #00B9EB;
+$entel-celeste-7: #13a6f8;
+$color-blue: #004FB9;
+$color-blue-cyberwow: #0433FF;
+$color-bluenew: #002EFF;
+$gray-form:#F2F2F2;
+
+$color_degradado: linear-gradient(rgba($black, .3) 0%, rgba($black, 1) 70%);
+
+// Font weights
+$font_light: light;
+$font_regular: regular;
+$font_medium: medium;
+$font_bold: bold;
+$font_black: 900;
+
+// Text
+$color_default: $blue;
+$font_bold: 700;
+$font_light: 300;
+$line_height: 1.35;
+$font_size_default: 14px;
+$letter_spacing: 0.005em;
+$font_family: 'Barlow' ,sans-serif;
+$font_family_secondary: $font_family;
+$body_background: $white;
+$color_link: $secondary;
+$color_link_hover: $teal;
+
+$color_title: $primary;
+$font_family_title: $font_family;
+$font_size_h1: 31px;
+$font_size_h2: 28px;
+$font_size_h3: 23px;
+$font_size_h4: 20px;
+$font_size_h5: 18px;
+$font_size_h6: 16px;
+
+// Colors list
+$color_list: ("primary", $primary),
+("secondary", $secondary),
+("transparent", transparent),
+("white", $white),
+("light-black", $light_black),
+("black", $black),
+("light-gray", $light_gray),
+("gray", $gray),
+("dark-gray", $dark_gray);
+
+$background_list: ("degraded", $color_degradado),
+("degraded", $color_degradado);
+
+// Social
+$social_color: $white;
+$social_color_hover: $primary;
+$social_background: transparent;
+$social_background_hover: $primary;
+
+$orange_degraded: linear-gradient(180deg, #FF8E0A 0%, #F13B02 100%);
+// Buttons
+$button_list: ("secondary", $white, $secondary, $secondary, $white, lighten($secondary, 5%), lighten($secondary, 5%)),
+("orange", $white, $orange, $orange, $white, $lght_orange, $lght_orange),
+("white", $orange, $white, $white, $orange, darken($white, 5%), darken($white, 5%)),
+("outline", $white, transparent, darken($white, 12%), $primary, transparent, darken($white, 17%)),
+("outline-orange", $orange, transparent, $orange, $white, $lght_orange, $lght_orange),
+("outline-orange-nohover", $orange, transparent, $orange, $orange, $white, $orange),
+("outline-white", $white, transparent, $white, $orange, $white, $white),
+("outline-dark-blue", $dark_blue, transparent, $dark_blue, $white, $dark_blue, $dark_blue),
+("transparent-dark-blue", $dark_blue, transparent, transparent, $dark_blue, transparent, transparent),
+("disabled", $white, darken($white, 12%), darken($white, 12%), $white, darken($white, 17%), darken($white, 17%)),("outline-7EB1F6-empresas", $white, #221E78, #7EB1F6, $white, #221E78, #7EB1F6),("outline-7EB1F6-personas", $white, $blue, #7EB1F6, $white, $blue, #7EB1F6);
+
+// Clases genericas
+$container_class : ".e-container";
+$title_class : ".e-title";
+$button_class : ".e-button";
+$accordion_class : ".m-accordion";
+$modal : ".m-modal";
