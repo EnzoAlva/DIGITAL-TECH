@@ -8,4 +8,22 @@ include ../../../mixins/mixins
 
 +html_template_clear
     header
+        .top-bar 
+            .top-bar__logo
+            .top-bar__input-search
+                input(type='search', name='search', placeholder='Búsqueda')
+            .top-bar__login
+                .top-bar__account
+                    img(src=img_path + "user.png", alt="")
+                    a(href="javascript:void(0)") Mi cuenta
+                .top-bar__car
+                    a(href="javascript:void(0)") #[img(src=img_path + "shopping-cart.png", alt="")]
+        nav.nav-bar
+            ul 
+                li Inicio
+                li Celulares 
+                li Computadoras
+                li Laptops
+                li Tablets
+
         
