@@ -3,20 +3,33 @@
 include ../../../base/vars
 include ../../../mixins/mixins
 
-- img_path = '../../../../assets/img/proyectos/digital-tech/'
+- img_prod_ejem = '../../../../assets/img/proyectos/digital-tech/prod_mobile.png'
 - landing_name = 'Digital TECH'
 
 +html_template_clear
     #carrito 
         .titulo
-            h3 Tu Lista de Compras 
+            h3 Carrito
         #contenedor
             each item in [1, 2, 3, 4]
                 .producto 
                     .imagenprod
-                        img
+                        img(src= img_prod_ejem, alt="samsung")
                     .descripcion
                         p nombre_producto 
-                        p precio_producto
-                        
+                        p 1000 $
+                    .removeProd 
+                        p x
+        .billing 
+            .subtotal 
+                p Total 
+                p 4000 $
+            .sending 
+                p Entrega 
+                p 00.00$ 
+            hr
+            .total 
+                p Total 
+                p 4000 $
+            button Pagar           
         
