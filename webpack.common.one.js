@@ -84,6 +84,17 @@ let aPlugins = [
     }),
 
     //*-----------------------------------------*//
+   /* new HtmlWebpackPlugin({
+        template: `./src/pug/pages/${carpeta_core_business}/${FILENAME}/XARCHIVOCREADOX.pug`,
+        hash: true,
+        filename: `XARCHIVOCREADOX.html`,
+        chunks: [`${FILENAME}`,`XARCHIVOCREADOX`],
+        inject: process.env.NODE_ENV === 'production' ? false : true,
+        minify: {
+            collapseWhitespace: process.env.NODE_ENV === 'production' ? true : false
+        }
+    }), */
+    //*-----------------------------------------*//
 
     new SpriteLoaderPlugin({
         plainSprite: true,
