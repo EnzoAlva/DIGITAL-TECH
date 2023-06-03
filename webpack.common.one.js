@@ -82,16 +82,7 @@ let aPlugins = [
             collapseWhitespace: process.env.NODE_ENV === 'production' ? true : false
         }
     }),
-    new HtmlWebpackPlugin({
-        template: `./src/pug/pages/${carpeta_core_business}/${FILENAME}/Producto.pug`,
-        hash: true,
-        filename: `Producto.html`,
-        chunks: [`${FILENAME}`,`Producto`],
-        inject: process.env.NODE_ENV === 'production' ? false : true,
-        minify: {
-            collapseWhitespace: process.env.NODE_ENV === 'production' ? true : false
-        } 
-    }),
+
     new HtmlWebpackPlugin({
         template: `./src/pug/pages/${carpeta_core_business}/${FILENAME}/products.pug`,
         hash: true,
