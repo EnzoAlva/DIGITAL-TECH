@@ -7,27 +7,26 @@ include ../../../mixins/mixins
 - landing_name = 'Digital TECH'
 
 +html_template_clear
-<<<<<<< HEAD
-
-=======
     header
-        .top-bar 
-            .top-bar__logo
-            .top-bar__input-search
-                input(type='search', name='search', placeholder='Búsqueda')
-            .top-bar__login
-                .top-bar__account
-                    img(src=img_path + "user.png", alt="")
-                    a(href="javascript:void(0)") Mi cuenta
-                .top-bar__car
-                    a(href="javascript:void(0)") #[img(src=img_path + "shopping-cart.png", alt="")]
+        .top-bar
+            .top-bar__content.container-responsive
+                .top-bar__logo
+                .top-bar__input-search
+                    input(type='search', name='search', placeholder='Búsqueda')
+                .top-bar__login
+                    .top-bar__account
+                        img(src=img_path + "user.png", alt="Icono Usuario")
+                        a(href="javascript:void(0)") Mi cuenta
+                    .top-bar__car
+                        a(href="javascript:void(0)") #[img(src=img_path + "shopping-cart.png", alt="Icono Carrito de compras")]
         nav.nav-bar
             ul 
-                li Inicio
-                li Celulares 
-                li Computadoras
-                li Laptops
-                li Tablets
+                li #[a(href='javascript:void(0)') Inicio]
+                li #[a(href='javascript:void(0)') Celulares]
+                li #[a(href='javascript:void(0)') Computadoras]
+                li #[a(href='javascript:void(0)') Laptops]
+                li #[a(href='javascript:void(0)') Tablets]
+        .banner 
+
 
         
->>>>>>> 549477cd011231fc60d2399dab021cdc8deadf1c
