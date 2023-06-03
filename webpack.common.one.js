@@ -71,11 +71,10 @@ let aPlugins = [
             collapseWhitespace: process.env.NODE_ENV === 'production' ? true : false
         }
     }),
-    new HtmlWebpackPlugin({
-        template: `./src/pug/pages/${carpeta_core_business}/${FILENAME}/prueba.pug`,
+    new HtmlWebpackPlugin({ 
         hash: true,
         filename: `prueba.html`,
-        chunks: [`prueba`],
+        chunks: [`${FILENAME}`,`prueba`],
         inject: process.env.NODE_ENV === 'production' ? false : true,
         minify: {
             collapseWhitespace: process.env.NODE_ENV === 'production' ? true : false
