@@ -4,7 +4,7 @@ mixin html_template
         html(lang="es-PE")(class!=attributes.class)
             head
                 include ../base/head
-            body.entel-body
+            body.project-body
                 if block
                     block
                 include ../base/foot
@@ -20,7 +20,7 @@ mixin html_template_clear
         html(lang="es-PE")(class!=attributes.class)
             head
                 include ../base/head_clear
-            body.entel-body
+            body.project-body
                 if block
                     block
                 include ../base/foot
