@@ -2,7 +2,8 @@
 
 include ../../../base/vars
 include ../../../mixins/mixins
-- img_uno = '../../../../assets/img/proyectos/digital-tech/producto.jpg'
+
+- img_uno = '../../../../assets/img/proyectos/digital-tech/prod_mobile.png'
 
 +html_template_clear
     #contenedor 
@@ -52,43 +53,10 @@ include ../../../mixins/mixins
                     option(value="opcion3") Menor Precio
                     option(value="opcion4") Más Vendidos
             .producto
-                .card
-                    img(src= img_uno, alt="Samsung Galaxy A33 5G")
-                    h3 Samsung Galaxy A33 5G
-                    p S/1248
-                    input(type="submit" value="Añadir al carrito")
-                .card
-                    img(src="" alt="XIAOMI REDMI NOTE 11")
-                    h3 Xiaomi Redmi Note 11"
-                    p S/1479
-                    input(type="submit" value="Añadir al carrito")
-                .card
-                    img(src="" alt="iphone 11 6.1")
-                    h3 iphone 11 6.1
-                    p S/3499
-                    input(type="submit" value="Añadir al carrito")
-                .card
-                    img(src="" alt="LG WING 56")
-                    h3 LG Wing 56
-                    p S/2652
-                    input(type="submit" value="Añadir al carrito")
-                .card
-                    img(src="" alt="XIAOMI 12")
-                    h3 XIAOMI 12
-                    p S/619
-                    input(type="submit" value="Añadir al carrito")
-                .card
-                    img(src="" alt="MOTOROLA MOTO G60S")
-                    h3 MOTOROLA MOTO G60S
-                    p S/729
-                    input(type="submit" value="Añadir al carrito")
-                .card
-                    img(src="" , alt="GALAXY S23 ULTRA")
-                    h3 GALAXY S23 ULTRA
-                    p S/4499
-                    input(type="submit" value="Añadir al carrito")
-                .card
-                    img(src="" alt="XIAOMI 12S ULTRA")
-                    h3 XIAOMI 12S ULTRA
-                    p S/4700
-                    input(type="submit" value="Añadir al carrito")
+                each item in [1,2,3,4,5,6,7,8,9]
+                    .card
+                        img(src=img_uno, alt="Samsung Galaxy A33 5G")
+                        h3 Samsung Galaxy A33 5G
+                        p S/1248
+                        input(type="submit" value="Añadir al carrito")
+                
